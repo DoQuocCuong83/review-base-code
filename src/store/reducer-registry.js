@@ -7,7 +7,7 @@ class ReducerRegistry {
   register(name, reducer) {
     this.reducers = {
       ...this.reducers,
-      [name]: reducer,
+      [name]: reducer
     };
     if (this.emitChange !== null) {
       this.emitChange(this.reducers);

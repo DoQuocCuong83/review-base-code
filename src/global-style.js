@@ -1,12 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
 ol, ul{
   list-style: none;
 }
@@ -15,14 +9,25 @@ a{
 	color: #fff;
 }
 html {
-  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
 }
-body {
-  font-size: 14px;
-  font-weight: 300;
+.fz-aws-1{
+  font-size: 1rem !important;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+.fz-aws-1-5{
+  font-size: 1.5rem !important;
+}
+.fz-aws-1-8{
+  font-size: 1.8rem !important;
+}
+.fz-aws-2{
+  font-size: 2rem !important;
+}
+.fz-aws-2-4{
+  font-size: 2.4rem !important;
+}
+.fz-aws-3{
+  font-size: 3rem !important;
 }
 `;

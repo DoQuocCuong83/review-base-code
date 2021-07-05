@@ -1,26 +1,11 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import reducerRegistry from "../../../store/reducer-registry";
-
-// API example, API in project must define in folder api
-const fetchValue = (value = "") => {
-  return new Promise(resolve =>
-    setTimeout(() => resolve({ data: value }), 2000)
-  );
-};
-// ---------------------------------
+import { addValueAsync } from "./async-thunk";
 
 const initialState = {
   value: "",
   status: "success"
 };
-
-export const addValueAsync = createAsyncThunk(
-  "test/fetchValue",
-  async value => {
-    const response = await fetchValue(value);
-    return response.data;
-  }
-);
 
 export const testSlice = createSlice({
   name: "test",

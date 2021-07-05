@@ -1,15 +1,9 @@
 import axiosInstance from "./config";
 
-const URI = "/";
+const URI = "http://localhost:8000/";
 
-export const indexAllRequest = (endPoint) => {
+export const getRequest = endPoint => {
   return axiosInstance.get(URI + endPoint);
-};
-
-export const indexOneRequest = (endPoint, params) => {
-  return axiosInstance.get(URI + endPoint, {
-    params,
-  });
 };
 
 export const createRequest = (endPoint, data) => {

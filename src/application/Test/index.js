@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Child from "./child";
 import { useDispatch } from "react-redux";
-import { addValueAsync } from "./store/slice";
+import { addValueAsync } from "./store/async-thunk";
 
 const Test = () => {
   const dispatch = useDispatch();

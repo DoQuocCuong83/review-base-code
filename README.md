@@ -32,3 +32,19 @@ src/baseUI: UI are shared by pages.\
 src/router: contains routers in the app.\
 src/store: contains store created by redux-toolkit.\
 src/helper: functions, slices are shared by pages.
+
+## Setup pre-commit
+
+Run scripts:
+
+```sh
+npm install mrm mrm-task-lint-staged --save-dev
+```
+
+```sh
+npx mrm lint-staged
+```
+
+```sh
+npm uninstall mrm mrm-task-lint-staged
+```
